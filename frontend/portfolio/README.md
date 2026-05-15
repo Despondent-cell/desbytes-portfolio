@@ -1,73 +1,97 @@
-# React + TypeScript + Vite
+# Desbytes Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio website and personal project platform built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## PL — Polski
 
-## React Compiler
+### Opis
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Desbytes to portfolio developerskie oraz platforma do nauki nowych technologii. Frontend to SPA w React serwowany przez Nginx na AWS EC2, z Cloudflare jako warstwą cachingu i ochrony DDoS. Backend (Spring Boot) jest przygotowany pod przyszłe funkcje — API formularza kontaktowego i dynamiczne dane projektów.
 
-## Expanding the ESLint configuration
+### Stos technologiczny
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend:** React 19, TypeScript, Vite, React Router, i18next
+- **Backend (planowany):** Java 17, Spring Boot 4.0
+- **Infrastruktura:** AWS EC2, Nginx, Cloudflare, Let's Encrypt SSL
+- **CI/CD:** GitHub Actions (automatyczny deploy na push do master)
+- **Formularz kontaktowy:** Cloudflare Worker + Resend API
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Dostępne funkcje
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Landing page z hero i CTA
+- Strona **Projects** z kartami projektów i szczegółami (`/projects/:slug`)
+- Strona **About** z opisem i skillami
+- **Formularz kontaktowy** z ochroną antyspamową (honeypot + walidacja)
+- **Internacjonalizacja** — język polski i angielski (i18next + react-i18next)
+- Responsywny interfejs z hamburger menu
+- Design system oparty na CSS Variables (paleta teal na ciemnym tle)
+- CI/CD — automatyczny build i deploy przez GitHub Actions
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Uruchomienie lokalne
+
+Wymagania: Node.js 20+
+
+```bash
+cd frontend/portfolio
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Aplikacja uruchamia się na `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Build produkcyjny
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+Pliki trafiają do `dist/`, gotowe do serwowania przez Nginx.
+
+---
+
+## ENG — English
+
+### Description
+
+Desbytes is a personal developer portfolio and a platform for exploring new technologies. The frontend is a React SPA served by Nginx on AWS EC2, with Cloudflare providing caching and DDoS protection. The backend (Spring Boot) is set up for future features — a contact form API and dynamic project data.
+
+### Tech Stack
+
+- **Frontend:** React 19, TypeScript, Vite, React Router, i18next
+- **Backend (planned):** Java 17, Spring Boot 4.0
+- **Infrastructure:** AWS EC2, Nginx, Cloudflare, Let's Encrypt SSL
+- **CI/CD:** GitHub Actions (auto-deploy on push to master)
+- **Contact form:** Cloudflare Worker + Resend API
+
+### Features
+
+- Landing page with hero section and CTAs
+- **Projects** page with project cards and detail view (`/projects/:slug`)
+- **About** page with bio and skills grid
+- **Contact form** with spam protection (honeypot + validation)
+- **Internationalization** — Polish and English (i18next + react-i18next)
+- Responsive UI with hamburger menu
+- CSS Variables design system (teal palette on dark background)
+- CI/CD — automatic build and deploy via GitHub Actions
+
+### Running Locally
+
+Requirements: Node.js 20+
+
+```bash
+cd frontend/portfolio
+npm install
+npm run dev
+```
+
+Application starts at `http://localhost:5173`.
+
+### Production Build
+
+```bash
+npm run build
+```
+
+Output goes to `dist/`, ready to be served by Nginx.
