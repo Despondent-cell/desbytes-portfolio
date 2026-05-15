@@ -14,7 +14,7 @@ Desbytes to portfolio developerskie. Frontend to SPA w React serwowany przez Ngi
 
 - **Frontend:** React 19, TypeScript, Vite, React Router, i18next
 - **Backend (planowany):** Java 17, Spring Boot 4.0
-- **Infrastruktura:** AWS EC2, Nginx, Cloudflare, Let's Encrypt SSL
+- **Infrastruktura:** AWS EC2, Nginx, Cloudflare (CDN + DDoS), Let's Encrypt SSL
 - **CI/CD:** GitHub Actions (automatyczny deploy na push do master)
 - **Formularz kontaktowy:** Cloudflare Worker + Resend API
 
@@ -55,7 +55,7 @@ Desbytes is a personal developer portfolio. A React SPA served by Nginx on AWS E
 
 - **Frontend:** React 19, TypeScript, Vite, React Router, i18next
 - **Backend (planned):** Java 17, Spring Boot 4.0
-- **Infrastructure:** AWS EC2, Nginx, Cloudflare, Let's Encrypt SSL
+- **Infrastructure:** AWS EC2, Nginx, Cloudflare (CDN + DDoS), Let's Encrypt SSL
 - **CI/CD:** GitHub Actions (auto-deploy on push to master)
 - **Contact form:** Cloudflare Worker + Resend API
 
