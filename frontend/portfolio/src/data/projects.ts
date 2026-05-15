@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
     tags: ["Java", "Spring Boot", "React", "TypeScript", "Nginx", "AWS"],
     status: "in-progress",
     liveUrl: "https://desbytes.com",
-    githubUrl: "https://github.com/Despondent-cell/desbytes",
+    githubUrl: "https://github.com/Despondent-cell/desbytes-portfolio",
   },
   {
     slug: "learningshare",
@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
     tags: ["Java", "Spring Boot", "Thymeleaf", "Spring Security", "Liquibase", "MySQL"],
     status: "live",
     liveUrl: "https://learningshare.desbytes.com",
-    githubUrl: "https://github.com/Despondent-cell/learningshare",
+    githubUrl: "https://github.com/Despondent-cell/learningshare-portfolio",
   },
   {
     slug: "project-alpha",
