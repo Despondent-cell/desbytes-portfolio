@@ -1,0 +1,50 @@
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  max-width: 680px;
+  margin-top: 2rem;
+}
+
+.about-skills {
+  margin-top: 3rem;
+}
+
+.skills-heading {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* Kategorie obok siebie na szerszych ekranach */
+.skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skills-category {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.skills-category-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent-dim);
+  font-weight: 600;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}

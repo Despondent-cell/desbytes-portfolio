@@ -1,0 +1,30 @@
+# IDE
+.idea/
+*.iml
+*.iws
+.vscode/
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+target/
+
+# Environment & sensitive
+*.pem
+*.key
+.env
+.env.*
+
+# Editor temp files
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Claude / AI
+.claude/
+
+# Wrangler (Cloudflare Workers) cache
+.wrangler/

@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "home": "Start",
+    "about": "O mnie",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+
+  "landing": {
+    "badge": "Otwarty na współpracę",
+    "title": "Cześć, jestem",
+    "name": "Artur",
+    "tagline": "Full-stack developer tworzący przejrzyste i celowe oprogramowanie.",
+    "description": "Buduję aplikacje webowe z naciskiem na doświadczenie dewelopera, wydajność i przemyślany design.",
+    "ctaProjects": "Zobacz projekty",
+    "ctaContact": "Napisz do mnie",
+    "scrollHint": "Przewiń w dół"
+  },
+
+  "about": {
+    "title": "O mnie",
+    "bio1": "Jestem full-stack developerem z doświadczeniem w inżynierii wdrożeń. Pracowałem blisko z zespołami biznesowymi i QA — analizowałem wymagania, przeprowadzałem testy wydajnościowe i dostarczałem oprogramowanie dopasowane do rzeczywistego problemu.",
+    "bio2": "Obecnie skupiam się na full-stack developmencie: niezawodne backendy w Javie i przejrzyste interfejsy w React. Zależy mi na zrozumieniu tego, co buduję, zanim napiszę pierwszą linię kodu.",
+    "skillsTitle": "Umiejętności",
+    "categories": {
+      "core": "Podstawowe",
+      "tools": "Narzędzia",
+      "engineering": "Inżynieria"
+    }
+  },
+
+  "projects": {
+    "title": "Projekty",
+    "subtitle": "To, co zbudowałem lub aktualnie buduję.",
+    "status": {
+      "live": "Działa",
+      "in-progress": "W trakcie",
+      "planned": "Planowane"
+    },
+    "viewDetails": "Zobacz szczegóły",
+    "backToProjects": "← Wróć do projektów",
+    "techStack": "Stack technologiczny",
+    "highlights": "Co zostało zbudowane",
+    "links": {
+      "github": "GitHub",
+      "live": "Strona na żywo"
+    },
+    "notFound": "Nie znaleziono projektu.",
+    "data": {
+      "desbytes": {
+        "shortDesc": "Osobiste portfolio i platforma webowa. Projekt, który właśnie oglądasz.",
+        "fullDesc": "Desbytes to full-stackowe portfolio zbudowane do prezentacji projektów i nauki nowych technologii. Frontend to React SPA serwowany przez Nginx na AWS EC2, za Cloudflare (cache i ochrona DDoS). Backend (Spring Boot) zaplanowany do przyszłych funkcji: API formularza kontaktowego i dynamicznych danych projektów.",
+        "highlights": [
+          "Frontend: Vite + React 19 + TypeScript",
+          "React Router do nawigacji po stronie klienta",
+          "Nginx skonfigurowany pod SPA routing, HTTP/2, gzip i cache assetów",
+          "AWS EC2 + Cloudflare + SSL od Let's Encrypt",
+          "i18n z i18next (EN + PL)"
+        ]
+      },
+      "learningshare": {
+        "shortDesc": "Aplikacja webowa do przeglądania i oceniania kursów online.",
+        "fullDesc": "LearningShare to full-stackowa aplikacja webowa zbudowana w Spring Boot z szablonami Thymeleaf. Użytkownicy mogą przeglądać kursy według kategorii, sprawdzać szczegóły kursu (opis, trailer, link) i oceniać je w skali 1–5. Aplikacja obsługuje rejestrację, system ról (USER, EDITOR, ADMIN) oraz panel admina do zarządzania kursami, kategoriami i zdjęciami.",
+        "highlights": [
+          "Java 17 + Spring Boot 3 (Web MVC, Data JPA, Security)",
+          "Szablony Thymeleaf po stronie serwera, responsywny interfejs",
+          "Role użytkowników: USER, EDITOR, ADMIN",
+          "Panel admina — kursy, kategorie, upload zdjęć",
+          "Migracje Liquibase, H2 (dev/demo) i MySQL (produkcja)",
+          "Dedykowany profil demo — zabezpieczony pod publiczny dostęp"
+        ]
+      },
+      "project-alpha": {
+        "shortDesc": "W trakcie — szczegóły pojawią się wkrótce.",
+        "fullDesc": "Projekt jest aktualnie w fazie planowania. Więcej informacji pojawi się po rozpoczęciu prac.",
+        "highlights": []
+      }
+    }
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Masz projekt? Porozmawiajmy.",
+    "intro": "Jestem otwarty na zlecenia, współpracę i zatrudnienie. Napisz wiadomość, a odezwę się.",
+    "social": "Znajdź mnie online",
+    "form": {
+      "name": "Imię",
+      "namePlaceholder": "Twoje imię",
+      "email": "Email",
+      "emailPlaceholder": "ty@przyklad.pl",
+      "message": "Wiadomość",
+      "messagePlaceholder": "O czym chcesz porozmawiać?",
+      "submit": "Wyślij wiadomość",
+      "sending": "Wysyłanie...",
+      "success": "Wiadomość wysłana! Odezwę się wkrótce.",
+      "error": "Coś poszło nie tak. Spróbuj ponownie.",
+      "validation": {
+        "required": "To pole jest wymagane.",
+        "nameTooShort": "Imię musi mieć co najmniej 2 znaki.",
+        "nameTooLong": "Imię może mieć maksymalnie 100 znaków.",
+        "emailInvalid": "Wprowadź prawidłowy adres email.",
+        "messageTooShort": "Wiadomość musi mieć co najmniej 10 znaków.",
+        "messageTooLong": "Wiadomość może mieć maksymalnie 2000 znaków."
+      }
+    }
+  }
+}

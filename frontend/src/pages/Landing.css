@@ -1,0 +1,67 @@
+/* Dark background with subtle gradient */
+.home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #0a1a14, #000000);
+    color: #d9f7e7;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Animated loading symbol */
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 6px solid rgba(0, 255, 150, 0.2);
+    border-top-color: #00ff9d;
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+    margin-bottom: 30px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #00ff9d;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #7fffd4;
+}
+
+.description {
+    font-size: 1.1rem;
+    max-width: 600px;
+    opacity: 0.85;
+    margin-bottom: 40px;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.footer a {
+    color: #00ff9d;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

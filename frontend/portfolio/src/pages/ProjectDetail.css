@@ -1,0 +1,90 @@
+.back-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.project-detail-header {
+  margin-bottom: 2.5rem;
+}
+
+.project-detail-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+/* page-title::after dodaje zielony pasek pod tytułem (z Layout.css).
+   Przy inline flex-row powoduje to problemy z alignmentem —
+   nadpisujemy żeby pasek był pod całym wierszem. */
+.project-detail-title-row .page-title::after {
+  display: none;
+}
+
+.project-detail-header::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--color-accent);
+  margin-top: 1rem;
+  border-radius: 2px;
+}
+
+.project-detail-desc {
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  max-width: 720px;
+}
+
+.project-section {
+  margin-top: 2.5rem;
+}
+
+.project-section-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.highlights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-left: 1.25rem;
+}
+
+.highlights-list li {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.highlights-list li::marker {
+  color: var(--color-accent);
+}
+
+.project-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Sekcja linków — przyciski obok siebie */
+.project-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

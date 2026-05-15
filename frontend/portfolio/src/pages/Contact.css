@@ -1,0 +1,144 @@
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  margin-top: 2.5rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  padding-top: 0.25rem;
+}
+
+.contact-email {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.form-group input,
+.form-group textarea {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-accent);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.6;
+}
+
+.contact-social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.contact-social-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.contact-social-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-accent-dim);
+  transition: color 0.2s;
+}
+
+.social-link:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+}
+
+.form-feedback {
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+}
+
+.form-feedback--success {
+  color: var(--color-accent);
+}
+
+.form-feedback--error {
+  color: #f87171;
+}
+
+/* Komunikat błędu walidacji pod polem */
+.field-error {
+  font-size: 0.8rem;
+  color: #f87171;
+  margin-top: 0.2rem;
+}
+
+/* Pole z błędem — czerwona ramka */
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: #f87171;
+}
+
+/* Licznik znaków pod textarea */
+.char-counter {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: right;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 640px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

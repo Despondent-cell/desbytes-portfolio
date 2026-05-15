@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "landing": {
+    "badge": "Open to work",
+    "title": "Hi, I'm",
+    "name": "Artur",
+    "tagline": "Full-stack developer building clean, purposeful software.",
+    "description": "I craft web applications with a focus on developer experience, performance, and thoughtful design.",
+    "ctaProjects": "See my work",
+    "ctaContact": "Get in touch",
+    "scrollHint": "Scroll to explore"
+  },
+
+  "about": {
+    "title": "About me",
+    "bio1": "I'm a full-stack developer with a background in implementation engineering. I've worked closely with business teams and QA — analysing requirements, running performance tests, and delivering software that actually fits the problem.",
+    "bio2": "These days I focus on full-stack development: building reliable backends in Java and clean interfaces in React. I care about understanding what I'm building before I write the first line.",
+    "skillsTitle": "Skills",
+    "categories": {
+      "core": "Core",
+      "tools": "Tools",
+      "engineering": "Engineering"
+    }
+  },
+
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Things I've built or am currently building.",
+    "status": {
+      "live": "Live",
+      "in-progress": "In progress",
+      "planned": "Planned"
+    },
+    "viewDetails": "View details",
+    "backToProjects": "← Back to projects",
+    "techStack": "Tech stack",
+    "highlights": "What was built",
+    "links": {
+      "github": "GitHub",
+      "live": "Live site"
+    },
+    "notFound": "Project not found.",
+    "data": {
+      "desbytes": {
+        "shortDesc": "Personal portfolio and web platform. The project you're looking at right now.",
+        "fullDesc": "Desbytes is a full-stack personal portfolio built to showcase projects and serve as a learning ground for new technologies. The frontend is a React SPA served by Nginx on AWS EC2, sitting behind Cloudflare for caching and DDoS protection. The backend (Spring Boot) is planned for future features like a contact form API and dynamic project data.",
+        "highlights": [
+          "Vite + React 19 + TypeScript frontend",
+          "React Router for client-side navigation",
+          "Nginx configured for SPA routing, HTTP/2, gzip and asset caching",
+          "AWS EC2 + Cloudflare + Let's Encrypt SSL setup",
+          "i18n with i18next (EN + PL)"
+        ]
+      },
+      "learningshare": {
+        "shortDesc": "Web application for browsing and rating online courses.",
+        "fullDesc": "LearningShare is a full-stack web application built with Spring Boot and Thymeleaf. Users can browse courses by category, view course details with trailers and links, and rate them on a 1–5 scale. The application includes user registration, role-based access control (USER, EDITOR, ADMIN), and an admin panel for managing courses, categories, and image uploads.",
+        "highlights": [
+          "Java 17 + Spring Boot 3 (Web MVC, Data JPA, Security)",
+          "Thymeleaf server-side templates with responsive UI",
+          "Role-based access control: USER, EDITOR, ADMIN",
+          "Admin panel — courses, categories, image upload",
+          "Liquibase migrations, H2 (dev/demo) and MySQL (production)",
+          "Dedicated demo Spring profile — secured for public access"
+        ]
+      },
+      "project-alpha": {
+        "shortDesc": "Work in progress — details coming soon.",
+        "fullDesc": "This project is currently in planning. More information will be added once development starts.",
+        "highlights": []
+      }
+    }
+  },
+
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk.",
+    "intro": "I'm open to freelance work, collaborations, and full-time opportunities. Drop me a message and I'll get back to you.",
+    "social": "Find me online",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "message": "Message",
+      "messagePlaceholder": "What's on your mind?",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent! I'll get back to you soon.",
+      "error": "Something went wrong. Please try again.",
+      "validation": {
+        "required": "This field is required.",
+        "nameTooShort": "Name must be at least 2 characters.",
+        "nameTooLong": "Name must be at most 100 characters.",
+        "emailInvalid": "Please enter a valid email address.",
+        "messageTooShort": "Message must be at least 10 characters.",
+        "messageTooLong": "Message must be at most 2000 characters."
+      }
+    }
+  }
+}
