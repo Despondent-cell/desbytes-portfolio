@@ -1,83 +1,46 @@
-# Desbytes Portfolio
+# Getting Started with Create React App
 
-Portfolio website built with React, TypeScript, and Vite.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## PL — Polski
+In the project directory, you can run:
 
-### Opis
+### `npm start`
 
-Desbytes to portfolio developerskie. Frontend to SPA w React serwowany przez Nginx na AWS EC2, z Cloudflare jako warstwą cachingu.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Stos technologiczny
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-- **Frontend:** React 19, TypeScript, Vite, React Router, i18next
-- **Backend (planowany):** Java 17, Spring Boot 4.0
-- **Infrastruktura:** AWS EC2, Nginx, Cloudflare, Let's Encrypt SSL
-- **CI/CD:** GitHub Actions (automatyczny deploy na push do master)
-- **Formularz kontaktowy:** Cloudflare Worker + Resend API
+### `npm test`
 
-### Funkcje
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Landing page z hero i CTA
-- Projekty z kartami i szczegółami (`/projects/:slug`)
-- Strona About z opisem i skillami
-- Formularz kontaktowy (honeypot + walidacja)
-- i18n — PL i EN
-- Responsywny interfejs z hamburger menu
-- Design system oparty na CSS Variables (teal na ciemnym tle)
+### `npm run build`
 
-### Uruchomienie lokalne
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```bash
-cd portfolio
-npm install
-npm run dev
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Build produkcyjny
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```bash
-npm run build
-```
+### `npm run eject`
 
----
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## ENG — English
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Description
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Desbytes is a personal developer portfolio. A React SPA served by Nginx on AWS EC2 behind Cloudflare.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Tech Stack
+## Learn More
 
-- **Frontend:** React 19, TypeScript, Vite, React Router, i18next
-- **Backend (planned):** Java 17, Spring Boot 4.0
-- **Infrastructure:** AWS EC2, Nginx, Cloudflare, Let's Encrypt SSL
-- **CI/CD:** GitHub Actions (auto-deploy on push to master)
-- **Contact form:** Cloudflare Worker + Resend API
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Features
-
-- Landing page with hero section and CTAs
-- Project cards with detail view (`/projects/:slug`)
-- About page with bio and skills
-- Contact form with spam protection
-- i18n — EN and PL
-- Responsive UI with hamburger menu
-- CSS Variables design system (teal on dark)
-
-### Running Locally
-
-```bash
-cd portfolio
-npm install
-npm run dev
-```
-
-### Production Build
-
-```bash
-npm run build
-```
+To learn React, check out the [React documentation](https://reactjs.org/).
